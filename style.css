@@ -1,0 +1,110 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+/* NavBar */
+.navbar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(35, 31, 32, 1) 27%,
+    rgba(35, 31, 32, 1) 100%
+  );
+}
+
+.form-inline {
+  margin-right: -2rem;
+}
+
+.logo {
+  width: 15rem;
+  height: 5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-rounded {
+  border-radius: 2rem;
+}
+
+.searchBtn {
+  position: relative;
+  left: -1.8rem;
+}
+.searchIcon {
+  width: 30px;
+  height: 25px;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.navbar-nav .nav-item i {
+  background: radial-gradient(
+    circle,
+    rgba(35, 96, 2, 1) 0%,
+    rgba(82, 172, 34, 1) 0%,
+    rgba(35, 96, 2, 1) 100%
+  );
+  border-radius: 50%;
+
+  box-shadow: 0 0px 14px rgba(35, 96, 2, 1);
+  padding: 10px;
+}
+
+/* NavBar */
+
+/* main section */
+.mainSection {
+  background-image: url("./images/SmallKidImg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* main section */
+
+@media (max-width: 1024px) {
+  .navbar {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 35%,
+      rgba(255, 255, 255, 1) 35%,
+      rgba(35, 31, 32, 1) 35%,
+      rgba(35, 31, 32, 1) 100%
+    );
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 45%,
+      rgba(255, 255, 255, 1) 45%,
+      rgba(35, 31, 32, 1) 45%,
+      rgba(35, 31, 32, 1) 100%
+    );
+  }
+}
