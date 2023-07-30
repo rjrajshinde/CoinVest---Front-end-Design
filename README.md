@@ -2,4 +2,4 @@
 
 This is just a Responsive Front-end Design using simple HTML, CSS, Bootstrap.
 
-##Design is in Development Mode
+## Design is in Development Mode
