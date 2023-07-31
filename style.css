@@ -88,6 +88,17 @@
   height: 100vh;
 }
 
+.introProfileSection::before {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: url(./images/ManInSuite.png);
+  background-size: auto;
+  background-position: 30% 80%;
+  border-radius: 50%;
+}
+
 .introProfileSection .greenBG {
   height: 5rem;
   background: radial-gradient(
@@ -106,11 +117,36 @@
   color: #fff;
 }
 
+.introProfileSection .yellowBG {
+  height: 3.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(152, 119, 4, 1) 0%,
+    rgba(255, 222, 50, 1) 50%,
+    rgba(152, 119, 4, 1) 100%
+  );
+  /* display: flex;
+  justify-content: center; */
+}
+.introProfileSection .yellowBG span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.introProfileSection .blackBG {
+  background-color: #000;
+  height: 4rem;
+}
+
 /* Intro Profile section */
 
 /* Media Queries */
 
 @media (max-width: 1024px) {
+  :root {
+    font-size: 13px;
+  }
+
   .navbar {
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -121,6 +157,21 @@
       rgba(35, 31, 32, 1) 35%,
       rgba(35, 31, 32, 1) 100%
     );
+  }
+
+  .introProfileSection .greenBG {
+    height: 10rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+
+  .nullSpan {
+    display: none;
   }
 }
 
@@ -135,6 +186,10 @@
       rgba(35, 31, 32, 1) 45%,
       rgba(35, 31, 32, 1) 100%
     );
+  }
+  .searchBtn {
+    left: 7.5rem;
+    top: -1.6rem;
   }
 }
 /* Media Queries */
