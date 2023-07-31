@@ -63,7 +63,6 @@
     rgba(35, 96, 2, 1) 100%
   );
   border-radius: 50%;
-
   box-shadow: 0 0px 14px rgba(35, 96, 2, 1);
   padding: 10px;
 }
@@ -85,19 +84,21 @@
 /* Intro Profile section */
 .introProfileSection {
   width: 100vw;
-  height: 100vh;
 }
 
+/* profile photo in circle */
 .introProfileSection::before {
   content: "";
   position: absolute;
-  width: 12rem;
-  height: 12rem;
+  top: 42rem;
+  left: 10rem;
+  width: 17rem;
+  height: 17rem;
   background-image: url(./images/ManInSuite.png);
-  background-size: auto;
-  background-position: 30% 80%;
+  background-size: contain;
   border-radius: 50%;
 }
+/* profile photo in circle */
 
 .introProfileSection .greenBG {
   height: 5rem;
@@ -125,20 +126,58 @@
     rgba(255, 222, 50, 1) 50%,
     rgba(152, 119, 4, 1) 100%
   );
-  /* display: flex;
-  justify-content: center; */
 }
+
 .introProfileSection .yellowBG span {
   font-size: 2.5rem;
   font-weight: 600;
 }
 
 .introProfileSection .blackBG {
-  background-color: #000;
-  height: 4rem;
+  background-color: rgba(35, 31, 32, 1);
+  height: 7rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.introProfileSection .blackBG .profileInfoDiv {
+  font-size: 1.5rem;
+  padding: 0 7rem 0;
 }
 
 /* Intro Profile section */
+
+/* Cards Section */
+.cards {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.blackCardsDiv .addressCard span {
+  background-color: rgba(35, 31, 32, 1);
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.goldCardsDiv .card-header {
+  background: rgba(255, 222, 50, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 222, 50, 1) 0%,
+    rgba(152, 119, 4, 1) 100%
+  );
+  color: #fff;
+}
+
+.goldCardsDiv .card {
+  border-radius: 0 0 50px 50px;
+}
+
+/* Cards Section */
 
 /* Media Queries */
 
@@ -159,8 +198,13 @@
     );
   }
 
+  .childBGSection {
+    background-size: cover;
+    height: 300px;
+  }
+
   .introProfileSection .greenBG {
-    height: 10rem;
+    height: 6rem;
   }
 
   .navbar-nav {
@@ -173,9 +217,34 @@
   .nullSpan {
     display: none;
   }
+
+  .introProfileSection .blackBG {
+    justify-content: center;
+  }
+
+  .introProfileSection .blackBG .profileInfoDiv {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  .introProfileSection::before {
+    width: 9rem;
+    height: 9rem;
+    top: 36rem;
+    left: 5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* .cards .nullDiv {
+    display: none;
+  } */
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  /* (min-width: 481px) and */
   .navbar {
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -190,6 +259,17 @@
   .searchBtn {
     left: 7.5rem;
     top: -1.6rem;
+  }
+
+  .introProfileSection .yellowBG span {
+    font-size: 2rem;
+  }
+
+  .introProfileSection::before {
+    width: 6rem;
+    height: 6rem;
+    top: 34.5rem;
+    left: 0;
   }
 }
 /* Media Queries */
