@@ -70,16 +70,45 @@
 
 /* NavBar */
 
-/* main section */
-.mainSection {
+/* child pic background section */
+.childBGSection {
   background-image: url("./images/SmallKidImg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: 25%;
   width: 100vw;
   height: 100vh;
 }
 
-/* main section */
+/* child pic background section */
+
+/* Intro Profile section */
+.introProfileSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.introProfileSection .greenBG {
+  height: 5rem;
+  background: radial-gradient(
+    circle,
+    rgba(8, 51, 34, 1) 0%,
+    rgb(42, 102, 9) 0%,
+    rgb(42, 102, 9) 10%,
+    rgb(42, 102, 9) 30%,
+    rgba(8, 51, 34, 1) 100%,
+    rgba(8, 51, 34, 1) 100%
+  );
+}
+
+.introProfileSection .greenBG span {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Intro Profile section */
+
+/* Media Queries */
 
 @media (max-width: 1024px) {
   .navbar {
@@ -108,3 +137,4 @@
     );
   }
 }
+/* Media Queries */
