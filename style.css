@@ -179,6 +179,12 @@
   color: #fff;
 }
 
+.goldCardsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .goldCardsDiv .card-header {
   background: rgba(255, 222, 50, 1);
   background: linear-gradient(
@@ -213,7 +219,6 @@
   );
   border: 2px solid #000;
   border-radius: 50%;
-
   padding: 10px;
 }
 
