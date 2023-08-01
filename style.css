@@ -20,6 +20,9 @@
     rgba(35, 31, 32, 1) 27%,
     rgba(35, 31, 32, 1) 100%
   );
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .form-inline {
@@ -71,7 +74,8 @@
 
 /* child pic background section */
 .childBGSection {
-  background-image: url("./images/SmallKidImg.png");
+  /* background-image: url("./images/SmallKidImg.png"); */
+  background-image: url("./images/SmallGirl.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 25%;
@@ -90,7 +94,7 @@
 .introProfileSection::before {
   content: "";
   position: absolute;
-  top: 42rem;
+  top: 37rem;
   left: 10rem;
   width: 17rem;
   height: 17rem;
@@ -325,7 +329,7 @@
 
   .childBGSection {
     background-size: cover;
-    height: 300px;
+    height: 380px;
   }
 
   .introProfileSection .greenBG {
@@ -355,7 +359,7 @@
   .introProfileSection::before {
     width: 9rem;
     height: 9rem;
-    top: 36rem;
+    top: 34rem;
     left: 5rem;
   }
 
