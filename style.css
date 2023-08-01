@@ -156,11 +156,27 @@
   gap: 5rem;
 }
 
+.cards .blackCardsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .blackCardsDiv .addressCard span {
   background-color: rgba(35, 31, 32, 1);
   color: #fff;
   padding: 2rem;
   font-size: 1.1rem;
+}
+
+.blackCardsDiv .card {
+  border-radius: 0 0 0 60px;
+}
+
+.blackCardsDiv .card-header {
+  background: rgba(35, 31, 32, 1);
+  padding: 1.6rem;
+  color: #fff;
 }
 
 .goldCardsDiv .card-header {
@@ -175,6 +191,23 @@
 
 .goldCardsDiv .card {
   border-radius: 0 0 50px 50px;
+}
+
+.goldCardsDiv .card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.goldCardsDiv .card-footer i {
+  background: radial-gradient(
+    circle,
+    rgba(35, 96, 2, 1) 0%,
+    rgba(82, 172, 34, 1) 0%,
+    rgba(35, 96, 2, 1) 100%
+  );
+  border-radius: 50%;
+
+  padding: 10px;
 }
 
 /* Cards Section */
