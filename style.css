@@ -207,10 +207,11 @@
 .goldCardsDiv .card-footer i {
   background: radial-gradient(
     circle,
-    rgba(35, 96, 2, 1) 0%,
-    rgba(82, 172, 34, 1) 0%,
-    rgba(35, 96, 2, 1) 100%
+    rgb(25, 68, 2) 0%,
+    rgb(88, 184, 37) 0%,
+    rgb(25, 68, 2) 100%
   );
+  border: 2px solid #000;
   border-radius: 50%;
 
   padding: 10px;
