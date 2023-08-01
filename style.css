@@ -191,9 +191,15 @@
 
 .goldCardsDiv .card {
   border-radius: 0 0 50px 50px;
+  /* border: none; */
+}
+
+.goldCardsDiv .card-body {
+  background-color: #faf9f9;
 }
 
 .goldCardsDiv .card-footer {
+  border: none;
   display: flex;
   justify-content: space-around;
 }
