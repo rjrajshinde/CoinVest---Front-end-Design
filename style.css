@@ -154,8 +154,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
+  margin-bottom: 6rem;
 }
 
+/* Black Cards */
 .cards .blackCardsDiv {
   display: flex;
   flex-direction: column;
@@ -178,6 +180,62 @@
   padding: 1.6rem;
   color: #fff;
 }
+
+.blackCardFour .card,
+.blackCardFive .card {
+  border-radius: 0;
+}
+
+.friend img {
+  width: 150px;
+  background-size: cover;
+}
+
+.friend .friendImg {
+  width: 150px;
+  /* background-size: cover; */
+  background-size: 120%;
+  background-position: 30% 30%;
+  border-radius: 30px;
+}
+
+.friend:nth-child(1) .friendImg {
+  background-image: url("./images/Friends1.png");
+}
+
+.friend:nth-child(2) .friendImg {
+  background-image: url("./images/Friends2.png");
+}
+
+.friend:nth-child(3) .friendImg {
+  background-image: url("./images/Friends3.png");
+}
+
+.friend:nth-child(4) .friendImg {
+  background-image: url("./images/Friends4.png");
+}
+
+.friend:nth-child(5) .friendImg {
+  background-image: url("./images/Friends5.png");
+}
+
+.friend:nth-child(6) .friendImg {
+  background-image: url("./images/Friends6.png");
+}
+
+.friend img.rounded-corners {
+  border-radius: 30px;
+}
+
+.blackCardFive .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Black Cards */
+
+/* Golden Cards  */
 
 .goldCardsDiv {
   display: flex;
@@ -210,7 +268,7 @@
   justify-content: space-around;
 }
 
-.goldCardsDiv .card-footer i {
+.goldCardOne .card-footer i {
   background: radial-gradient(
     circle,
     rgb(25, 68, 2) 0%,
@@ -221,6 +279,28 @@
   border-radius: 50%;
   padding: 10px;
 }
+
+.iconFooter i {
+  background: radial-gradient(
+    circle,
+    rgba(36, 156, 31, 1) 0%,
+    rgba(31, 136, 27, 1) 20%,
+    rgb(2, 56, 9) 59%,
+    rgb(2, 56, 9) 100%
+  );
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.goldCardThree .nestedCard .card-header {
+  background-color: rgb(6, 229, 229) !important;
+}
+
+.goldCardThree .nestedCard .test .progress {
+  height: 30px;
+}
+
+/* Golden Cards  */
 
 /* Cards Section */
 
@@ -280,12 +360,17 @@
   }
 
   .cards {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
-  /* .cards .nullDiv {
-    display: none;
-  } */
+  .goldCardsDiv {
+    order: 1;
+  }
+
+  .blackCardsDiv {
+    order: 2;
+  }
 }
 
 @media (max-width: 767px) {
